@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+img {
+	width: 100%;
+}
+
+/* Navbar */
+.bg-darkness {
+	background-color: #0c0c0c;
+}
+
+.navbar-brand,
+.nav-item {
+	font-weight: 600;
+}
+
+.nav-item a {
+	padding: 0.1rem;
+	margin: 0;
+}
+
+.nav-item {
+	transition: all .3s ease-in-out;
+}
+
+.nav-item:hover {
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px solid #3cc36b;
+}
+
+/* Botão e texto cor tema */
+
+.btn-success {
+	background-color: #3cc36b;
+	font-weight: 600;
+	border-radius: 2rem;
+}
+
+.text-sucess {
+	color: #3cc36b;
+}
+
+/* Início da home page */
+
+header {
+	color: white;
+	height: 100vh;
+}
+
+.visual-top {
+	height: 100vh;
+}
+
+@media (max-width: 765px) {
+	header {
+		height: 100%;
+	}
+
+	.visual-top {
+		height: 100%;
+	}
+}
+
+/* Card Style */
+
+.card {
+	background-color: #fcfcfc;
+	border: none;
+	box-shadow: 1px 2px 15px 5px #2727271e;
+	border-radius: 15px;
+}
+
+.card-black {
+	background-color: #272727;
+	box-shadow: 1px 1px 10px 5px #3030304d;
+	border: none;
+	border-radius: 15px;
+}
+
+.card-img-top {
+	height: 250px;
+}
+
+/* Passo a passo */
+
+.count {
+	color: white;
+	border-bottom: 2px solid #3cc36b;
+	font-size: 2rem;
+}
+
+.orc {
+	font-size: 1.5rem;
+}
+
+.btn-outline-success {
+	border: 2px solid;
+	border-radius: 2rem;
+}
+
+/* Encontre-nos */
+
+.link {
+	font-size: 1.3rem;
+	display: flex;
+	align-items: center;
+	margin: 10px;
+	border: 3px solid #3cc36b;
+}
+
+.fab {
+	font-size: 2rem;
+}
+
+.find {
+	margin-top: 2rem;
+	width: 50%;
+	border-top: 2px solid #27272742;
+}
+
+/* Css para o JS*/
+.texto-rem {
+	transition: all 1s;
+	opacity: 0;
+}
+
+.texto-add {
+	transition: all 1s;
+	opacity: 1;
+}
+
+.embed-responsive {
+	height: 88%;
+}
+
+figcaption,
+.figure-caption {
+	visibility: hidden;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	font-size: 100%;
+}
