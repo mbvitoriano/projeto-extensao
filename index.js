@@ -18,6 +18,6 @@ app.get('*', function (req, res) {
   res.redirect('/');
 });
 
-app.listen(3000, function () {
-  console.log('Rodando na porta 3000!');
-});
+app.listen(process.env.PORT || 5000, function () {
+  console.log('Running on port 5000')
+})
