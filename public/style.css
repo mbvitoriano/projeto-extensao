@@ -47,6 +47,12 @@ img {
 	border-radius: 2rem;
 }
 
+.btn-outline-light {
+	font-size: 1.3rem;
+	font-weight: 600;
+	border-radius: 2rem;
+}
+
 .text-sucess {
 	color: #3cc36b;
 }
@@ -56,6 +62,12 @@ img {
 header {
 	color: white;
 	height: 100vh;
+}
+
+/* textarea */
+textarea{
+	resize: none;
+	width: 100%;
 }
 
 .visual-top {

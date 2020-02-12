@@ -11,7 +11,7 @@
     somethings: black
  -->
 
-<header class=" bg-darkness">
+<header id="header" class=" bg-darkness">
   <div class="container">
     <div class="row align-items-center visual-top">
 
@@ -22,26 +22,27 @@
       </div>
 
       <div class="col-md-6 col-12 my-5">
-        <form>
+        <form action="/" method="POST">
 
           <div class="form-group">
             <label for="e-mail">E-mail</label>
-            <input type="email" class="form-control" id="e-mail" aria-describedby="emailHelp"
+            <input name="email" type="email" class="form-control" id="e-mail" aria-describedby="emailHelp"
               placeholder="email@exemplo.com">
           </div>
 
           <div class="form-group">
-            <label for="complete-name">Nome completo</label>
-            <input type="text" class="form-control" id="complete-name" placeholder="Nome ">
+            <label for="complete-name">Seu nome</label>
+            <input name="name" type="text" class="form-control" id="complete-name" placeholder="João da Silva">
           </div>
 
           <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" id="password"
-              placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
+            <label for="msg">Conteúdo para orçamento</label>
+            <textarea class="form-control" name="content"
+              placeholder="Digite uma descrição sobre seu evento. Vamos te enviar o orçamento completo por e-mail."
+              id="msg" rows="10"></textarea>
           </div>
 
-          <button type="submit" class="btn btn-success">Submit</button>
+          <button type="submit" class="btn btn-success">Enviar orçamento</button>
         </form>
       </div>
     </div>
@@ -49,7 +50,7 @@
 </header>
 
 <section>
-  <div class="container">
+  <div class="container" id="about">
     <h1 class="display-4 text-center mt-5">Sobre nós</h1>
 
     <div class="d-flex justify-content-center mt-4">
@@ -66,9 +67,9 @@
         <div class="card">
           <img class="card-img-top p-5" src='/images/undraw_piano.svg' alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">Lorem</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta error blanditiis
+              repellat, autem temporibus voluptas cumque sapiente odit id repudiandae?</p>
           </div>
         </div>
       </div>
@@ -77,9 +78,9 @@
         <div class="card">
           <img class="card-img-top p-5" src='/images/undraw_partying.svg' alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">Lorem</h5>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus atque velit nemo
+              dolores explicabo laborum voluptatibus consequatur aut quisquam minima.</p>
           </div>
         </div>
       </div>
@@ -88,9 +89,9 @@
         <div class="card">
           <img class="card-img-top p-5" src='/images/undraw_wedding.svg' alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">Lorem</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque minus iusto maiores
+              quas similique aperiam. Soluta aspernatur est harum animi?</p>
           </div>
         </div>
       </div>
@@ -119,21 +120,21 @@
 
           <div class="card-black mt-3">
             <div class="card-body">
-              <h5 class="text-sucess"><span class="count mr-4">1</span>Donwload</h5>
+              <h5 class="text-sucess"><span class="count mr-4">1</span>Lorem</h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, atque?</p>
             </div>
           </div>
 
           <div class="card-black mt-3">
             <div class="card-body">
-              <h5 class="text-sucess"><span class="count mr-4">2</span>Donwload</h5>
+              <h5 class="text-sucess"><span class="count mr-4">2</span>Lorem</h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, atque?</p>
             </div>
           </div>
 
           <div class="card-black mt-3">
             <div class="card-body">
-              <h5 class="text-sucess"><span class="count mr-4">3</span>Donwload</h5>
+              <h5 class="text-sucess"><span class="count mr-4">3</span>Lorem</h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, atque?</p>
             </div>
           </div>
@@ -147,7 +148,7 @@
       </div> <!-- row -->
 
       <div class="d-flex justify-content-center py-5">
-        <button class="btn btn-outline-success orc">Orçamento</button>
+        <a href="#header" class="btn btn-outline-success orc">Orçamentos</a>
       </div>
     </div> <!-- container -->
 
@@ -157,7 +158,7 @@
 
 <!-- Terceira section -->
 
-<section class="visual-top d-flex align-items-center">
+<section class="visual-top d-flex align-items-center" id="encontrar">
 
   <div class="container">
 
@@ -239,6 +240,9 @@
         <figcaption class="figure-caption">Ouça Avicii.</figcaption>
       </figure>
 
+    </div>
+    <div class="d-flex justify-content-center">
+      <a class="btn btn-outline-light text-center" href="#header">Fazer orçamento</a>
     </div>
   </div>
 
